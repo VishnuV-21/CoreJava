@@ -1,6 +1,6 @@
 package com.array;
 
-import java.nio.file.attribute.AclEntry;
+
 import java.util.Scanner;
 
 interface TypesOfArrays {
@@ -9,10 +9,44 @@ interface TypesOfArrays {
 	void twoDArray();
 
 	void jaggedArray();
+	void arrayWithObjects();
+	
 
 }
 
 public class Array implements TypesOfArrays {
+	
+	 String name ;
+	 int objCount;
+	 
+	 
+	
+
+	public Array(String name, int objCount) {
+		super();
+		this.name = name;
+		this.objCount = objCount;
+	}
+
+	public Array() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void arrayWithObjects() {
+	Array []arrayObj=new Array[3];
+	arrayObj[0]=new Array("Usha",1);
+	arrayObj[1]=new Array("Vishnu",3);
+	arrayObj[2]=new Array("Jyothi",5);
+	
+	
+	
+	for(int i=0;i<arrayObj.length;i++) {
+		System.out.println(arrayObj[i].name+ "   "+arrayObj[i].objCount);
+	}
+		
+	}
+
 	static Scanner sc = new Scanner(System.in);
 	static int marks[] = new int[5];
 	// 4 different classes and each storing marks of 3 students.
@@ -82,7 +116,8 @@ for(int i=0;i<jaggedArrays.length;i++) {
 		TypesOfArrays array = new Array();
 		// array.oneDArray();
 		//array.twoDArray();
-		array.jaggedArray();
+		//array.jaggedArray();
+		array.arrayWithObjects();
 	}
 
 }
