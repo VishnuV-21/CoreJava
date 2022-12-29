@@ -2,6 +2,8 @@ package com.inheritance;
 class A{
 	private int id;
 	private String name;
+	int rank;
+	
 	public int getId() {
 		return id;
 	}
@@ -22,8 +24,12 @@ class A{
 
 
 class B extends A{
-	
-	
+	B obj=new B ();
+	void run() {
+		//obj.id=20; ///not visible since it is private 
+		obj.rank=20;
+	}
+	//private methods does not participate in inheritance
 }
 public class Inheritance {
 	
