@@ -58,7 +58,7 @@ class Umpire {
 
 	public void whoIsWinner() {
 		// TODO Auto-generated method stub
-		if (numFromGuesser1== numFromPlayers1) {
+		if (numFromGuesser1 == numFromPlayers1) {
 			if (numFromGuesser1 == numFromPlayers2 && numFromGuesser1 == numFromPlayers3) {
 				System.out.println("Game tied, Everyone wins");
 			} else if (numFromGuesser1 == numFromPlayers2) {

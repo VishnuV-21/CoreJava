@@ -137,10 +137,10 @@ public class PatternMain {
 	public static void main(String[] args) {
 		//achieved runtime poly/latebinding 
 		AllMethods method1= new Alpha();
-		//method1.alphaHor();
+		method1.alphaHor();
 		//method1.alphaVer();
 		//method1.starHalfPyramidPattern();
-		method1.starFullPyramidPattern();
+		//method1.starFullPyramidPattern();
 	
 
 	}
